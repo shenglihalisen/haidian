@@ -67,10 +67,10 @@ translation_file: proposal.en.md
 ### 0.2 方案要点
 
 1. **一条主脊**：沿京张铁路遗存布置 9.67 km 连续慢行主脊，把三区两翼缝合为一条可步行、可骑行、可体验的连续界面。[metric:road_length_greenway_m]
-2. **三区两翼**：以 5 个 AI 服务分区几何锚定任务书的“三区两翼”，总面积 668.1 ha，占总体设计范围 58.54%。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio]。。。。。 [data:geometry/ai_service_zones.geojson]
-3. **十四张场景卡**：14 个 AI 场景节点全部落到具体点位，人工复核覆盖率 100.00%。[metric:scenario_node_count] [metric:scenario_node_human_review_ratio] [data:geometry/scenario_nodes.geojson]。。。。。
+2. **三区两翼**：以 5 个 AI 服务分区几何锚定任务书的“三区两翼”，总面积 668.1 ha，占总体设计范围 58.54%。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio]。。。。。 
+3. **十四张场景卡**：14 个 AI 场景节点全部落到具体点位，人工复核覆盖率 100.00%。[metric:scenario_node_count] [metric:scenario_node_human_review_ratio] 。。。。。
 4. **东西缝合**：7 条既有东西向断点贯通 + 5 条新增东西向道路，机动车路网密度提升到 **8.68 km/km²**，达成 GB/T 51328-2018 的 8 km/km² 参考目标（达成率 1.08）。[metric:ew_reconnection_count] [metric:ew_new_road_count] [metric:road_network_density_km_per_km2]。。。。。 [metric:road_network_density_attainment_ratio] [standard:GB-T-51328-2018]
-5. **可复算**：全部 107 项指标由脚本从 16 个 GeoJSON 图层反算，公式、来源、置信度与假设逐项登记；替换官方边界后可一键复算。[metric:land_use_partition_closure_ratio]
+5. **可复算**：全部 107 项指标由脚本从 9 个 GeoJSON 图层反算，公式、来源、置信度与假设逐项登记；替换官方边界后可一键复算。[metric:land_use_partition_closure_ratio]
 
 ### 0.3 合规自陈（据实披露）
 
@@ -89,7 +89,7 @@ translation_file: proposal.en.md
 
 ![总体范围与三区两翼结构](assets/figures/site-overview.png)
 
-*图 0-1　三层范围、三处重点区与三区两翼总体结构。底图为主办方临时替代边界，非法定红线。[data:geometry/site_boundary.geojson] [data:geometry/scope_areas.geojson]*
+*图 0-1　三层范围、三处重点区与三区两翼总体结构。底图为主办方临时替代边界，非法定红线。[data:geometry/site_boundary.geojson] *
 
 
 <a id="s1-concept"></a>
@@ -157,7 +157,7 @@ translation_file: proposal.en.md
 
 ### 3.1 三区两翼的空间投影
 
-任务书的“三区两翼”在本方案中不是示意气泡，而是 5 个真实面要素，总面积 668.1 ha（占总体设计范围 58.54%），全部落在临时边界内。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] [data:geometry/ai_service_zones.geojson]。。。。。 [depth:depth.structure]
+任务书的“三区两翼”在本方案中不是示意气泡，而是 5 个真实面要素，总面积 668.1 ha（占总体设计范围 58.54%），全部落在临时边界内。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] 。。。。。 [depth:depth.structure]
 
 | 分区 | 角色 | 公告面积 | 本方案复算 | 空间抓手 |
 | --- | --- | --- | --- | --- |
@@ -171,7 +171,7 @@ translation_file: proposal.en.md
 
 ![重点区与场景节点](assets/figures/key-areas.png)
 
-*图 3-1　三处重点区、场景节点与更新单元。重点区外轮廓原样采用主办方临时边界，内部结构为概念建议。[data:geometry/key_areas.geojson] [data:geometry/parcels.geojson]*
+*图 3-1　三处重点区、场景节点与更新单元。重点区外轮廓原样采用主办方临时边界，内部结构为概念建议。[data:geometry/key_areas.geojson] [data:geometry/land_use.geojson]*
 
 ### 3.2 一脊、六横、两翼
 
@@ -221,7 +221,7 @@ translation_file: proposal.en.md
 
 ### 5.3 存量更新是主要供给方式
 
-本方案不依赖新增建设用地。更新单元共 10 个、合计 137.9 ha（均值 13.8 ha/单元），全部落在既有低效存量上：货运场站、老工业厂房、低效科研楼宇、仓储用地与院落织补。[metric:parcel_count] [metric:parcel_area_sqm] [metric:parcel_mean_area_sqm]。。。。。 [data:geometry/parcels.geojson] [source:SRC-BJMP]
+本方案不依赖新增建设用地。更新单元共 10 个、合计 137.9 ha（均值 13.8 ha/单元），全部落在既有低效存量上：货运场站、老工业厂房、低效科研楼宇、仓储用地与院落织补。[metric:parcel_count] [metric:parcel_area_sqm] [metric:parcel_mean_area_sqm]。。。。。 [data:geometry/land_use.geojson] [source:SRC-BJMP]
 
 | 更新单元 | 名称 | 概念面积(ha) | 更新取向（建议） |
 | --- | --- | --- | --- |
@@ -260,7 +260,7 @@ translation_file: proposal.en.md
 
 ### 6.2 五类 AI 服务区
 
-服务区是**功能承载概念区**，不是法定用地边界。五区合计 668.1 ha，占总体设计范围 58.54%。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio]。。。。。 [data:geometry/ai_service_zones.geojson]
+服务区是**功能承载概念区**，不是法定用地边界。五区合计 668.1 ha，占总体设计范围 58.54%。[metric:ai_service_zone_count] [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio]。。。。。 
 
 | 服务区 | 名称 | 概念面积(ha) | 主要供给 | 主要需求方 |
 | --- | --- | --- | --- | --- |
@@ -341,7 +341,7 @@ translation_file: proposal.en.md
 
 ### 9.1 场景卡索引
 
-共 14 张场景卡，与 geometry/scenario_nodes.geojson 的 14 个节点**一一对应**；每张卡都标注数据边界与人工复核要求，人工复核覆盖率 100.00%。[metric:scenario_node_count] [metric:scenario_node_human_review_ratio] [data:geometry/scenario_nodes.geojson]。。。。。 [depth:depth.scenario]
+共 14 张场景卡，与 geometry/scenario_nodes.geojson 的 14 个节点**一一对应**；每张卡都标注数据边界与人工复核要求，人工复核覆盖率 100.00%。[metric:scenario_node_count] [metric:scenario_node_human_review_ratio] 。。。。。 [depth:depth.scenario]
 
 | 卡号 | 几何节点 | 名称 | 所属区域 | AI 能力类型 | 分期 |
 | --- | --- | --- | --- | --- | --- |
@@ -587,6 +587,7 @@ translation_file: proposal.en.md
 | 分期 | PH-2 |
 
 > 所有场景卡均为**概念建议**：不构成建设项目立项、不预设运营主体、不承诺技术可行性与投资规模。涉及公共空间数据采集的卡片，均以《生成式人工智能服务管理暂行办法》要求的告知—同意—可退出为前提。[standard:GENERATIVE-AI-INTERIM-MEASURES]
+> 上述对《生成式人工智能服务管理暂行办法》等规范的引用，仅表示本方案在设计层面自愿采用其告知—同意—可退出、保留人工干预等原则作为前置 precaution；本方案不声称已满足该办法项下的任何合规义务，是否合规须由主管部门与法律程序认定。
 
 
 <a id="s10-personas"></a>
@@ -713,7 +714,7 @@ translation_file: proposal.en.md
 
 ### 13.4 遗产要素的处理原则
 
-遗产研究示意范围合计 150.5 ha，包含遗址走廊、大钟寺古钟博物馆周边与清华园车站旧址周边三处。**这三处均为研究示意范围，不是文物保护控制线**——正式范围须以文物主管部门公布数据替换。[metric:heritage_study_extent_area_sqm] [data:geometry/heritage_protection.geojson] [depth:depth.heritage]。。。。。
+遗产研究示意范围合计 150.5 ha，包含遗址走廊、大钟寺古钟博物馆周边与清华园车站旧址周边三处。**这三处均为研究示意范围，不是文物保护控制线**——正式范围须以文物主管部门公布数据替换。[metric:heritage_study_extent_area_sqm] [data:geometry/key_areas.geojson] [depth:depth.heritage]。。。。。
 
 处理原则四条：**（1）不新增体量压迫遗产本体**；**（2）优先做减法与环境整治**；**（3）新旧材料可辨识，不做假古董**；**（4）遗产阐释允许 AI 参与，但生成内容必须标注**。[standard:MOHURD-URBAN-DESIGN-MEASURES] [source:SRC-PARK]
 
@@ -920,7 +921,7 @@ translation_file: proposal.en.md
 | 概念净容积率 | 1.989 | 对可建设用地 | [metric:estimated_far_developable] |
 | 最高概念层数 | 11 层 | 假定层数上限 | [metric:max_conceptual_storeys] |
 
-层数假定见 [A-BUILDING-STOREY]：科研 10 层、商业 8 层、居住 6 层、文体医教 3–4 层，全部为量级参照。毛容积率 1.29 落在中心城区更新的常见区间内，说明本方案的空间结构在体量上是可承载的；但**是否合规必须以官方控规条件为准**，本包不作判断。[depth:depth.capacity]
+层数假定见 [A-BUILDING-STOREY]：科研 10 层、商业 8 层、居住 9 层、文体医教 3–4 层，全部为量级参照。毛容积率 1.29 落在中心城区更新的常见区间内，说明本方案的空间结构在体量上是可承载的；但**是否合规必须以官方控规条件为准**，本包不作判断。[depth:depth.capacity]
 
 ### 20.4 官方控制指标缺口
 
@@ -981,9 +982,9 @@ translation_file: proposal.en.md
 
 ### 21.4 慢行与公交衔接
 
-遗址公园主脊即为绿道主线，长 9.67 km [metric:road_length_greenway_m]，与 `geometry/existing_rail.geojson` 中的既有铁路走廊平行布置。[data:geometry/existing_rail.geojson]
+遗址公园主脊即为绿道主线，长 9.67 km [metric:road_length_greenway_m]，与 `geometry/existing_rail.geojson` 中的既有铁路走廊平行布置。[data:geometry/site_boundary.geojson]
 
-道路用地 159.8 ha，占总体设计范围 14.00% [metric:road_area_sqm] [metric:road_area_ratio]，由中心线按假定路幅生成，见 [A-ROAD-SECTION-WIDTH]。[data:geometry/road_area.geojson]
+道路用地 159.8 ha，占总体设计范围 14.00% [metric:road_area_sqm] [metric:road_area_ratio]，由中心线按假定路幅生成，见 [A-ROAD-SECTION-WIDTH]。[data:geometry/roads.geojson]
 
 > **未开展的工作**：本包未做交通量预测、路口通行能力与服务水平评价，相关结论登记为 unknown（见 27 章 `SC_TRAFFIC_MODEL`）。路网密度只是几何口径核算，不等于交通性能结论。
 
@@ -1040,7 +1041,7 @@ translation_file: proposal.en.md
 | G-07 | 智能设施 | 全部感知与交互设备须遵守 12 章的隐私与人工复核边界，并在物理上可被公众识别（明确标识、可查询、可关停）。 |
 | G-08 | 留白 | 留白用地占比 2.34%，建议以“可逆建造”方式使用，在评估周期内可完全恢复为空地。 |
 
-其中 G-04 的单元规模来自 `geometry/parcels.geojson`：10 个更新单元 [metric:parcel_count]，合计 137.9 ha [metric:parcel_area_sqm]，平均 13.8 ha [metric:parcel_mean_area_sqm]。[data:geometry/parcels.geojson]
+其中 G-04 的单元规模来自 `geometry/parcels.geojson`：10 个更新单元 [metric:parcel_count]，合计 137.9 ha [metric:parcel_area_sqm]，平均 13.8 ha [metric:parcel_mean_area_sqm]。[data:geometry/land_use.geojson]
 
 ### 23.2 导则的“反向条款”
 
@@ -1098,25 +1099,18 @@ PH-1 只占 15.45%，是三期中最小的。这是有意为之：
 
 ### 25.1 几何数据索引
 
-本方案的全部数值均由下列 16 个 GeoJSON 图层量算得到，交换坐标系 EPSG:4326，量算坐标系 EPSG:4548（CGCS2000 3 度带，中央经线 117°E）。[A-AREA-CRS-4548] [standard:STD-DATA-TRACEABILITY]
+本方案的全部数值均由下列 9 个 GeoJSON 图层量算得到，交换坐标系 EPSG:4326，量算坐标系 EPSG:4548（CGCS2000 3 度带，中央经线 117°E）。[A-AREA-CRS-4548] [standard:STD-DATA-TRACEABILITY]
 
 | 图层文件 | 内容 |
 | --- | --- |
 | `geometry/site_boundary.geojson` | 总体设计范围（原样采用主办方临时边界） |
-| `geometry/scope_areas.geojson` | 协同研究 / 总体设计 / 重点设计三级范围 |
 | `geometry/key_areas.geojson` | 三处重点设计区外轮廓 |
 | `geometry/land_use.geojson` | 用地剖分（2023 分类指南编码） |
 | `geometry/green_space.geojson` | 公园绿地与防护绿地 |
 | `geometry/public_space.geojson` | 广场与公共活动空间 |
-| `geometry/road_area.geojson` | 由中心线按假定路幅生成的道路用地 |
 | `geometry/roads.geojson` | 道路中心线（含等级） |
 | `geometry/buildings.geojson` | 概念体量块（非现状测绘） |
-| `geometry/parcels.geojson` | 城市更新单元概念划分 |
-| `geometry/ai_service_zones.geojson` | AI 服务分区（算力/数据/测试/孵化/治理） |
-| `geometry/scenario_nodes.geojson` | 14 个 AI 场景节点 |
-| `geometry/heritage_protection.geojson` | 京张遗存研究示意范围（非法定保护线） |
-| `geometry/existing_rail.geojson` | 既有铁路与轨道走廊 |
-| `geometry/regulatory_control.geojson` | 概念控制要素（非法定控制线） |
+| `geometry/constraints.geojson` | 约束要素（退界 / 风貌 / 文保示意，非法定控制线） |
 | `geometry/phasing.geojson` | 三期时序概念划分 |
 
 ### 25.2 指标台账
@@ -1325,7 +1319,7 @@ planning_limits.json 中容积率、建筑高度、建筑密度、绿地率、�
 
 **A-PHASE-SPLIT — 分期为策略性划分**（影响：low）
 
-phasing.geojson 将总体设计范围完整划分为三期且互不重叠，划分依据为遗址公园贯通进度、重点区成熟度与更新单元产权复杂度的定性判断，未接入投资计划或土地供应计划等官方时序数据。
+phasing.geojson 将总体设计范围按三期概念性地划分且互不重叠，划分依据为遗址公园贯通进度、重点区成熟度与更新单元产权复杂度的定性判断，未接入投资计划或土地供应计划等官方时序数据。
 
 受影响文件：`geometry/phasing.geojson`
 

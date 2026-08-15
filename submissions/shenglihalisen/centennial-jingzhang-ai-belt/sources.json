@@ -4,6 +4,29 @@
   "accessed_date": "2026-08-10",
   "note_zh": "所有引用均来自公开可核验来源；reliability 字段标注来源等级，confidence 标注本方案对该数据的采信程度。",
   "note_en": "All citations come from publicly verifiable sources; 'reliability' marks the source tier and 'confidence' marks how strongly this proposal relies on it.",
+  "reliability_scale": {
+    "A": {
+      "label_zh": "一级：权威来源",
+      "label_en": "Tier A: authoritative",
+      "members": ["official_call_source", "statutory_plan", "national_standard"],
+      "meaning_zh": "主办方任务书、法定规划、国家标准；本方案直接采信，仅等待官方边界替换。",
+      "meaning_en": "Organizer taskbook, statutory plans and national standards; adopted directly, pending only official boundary substitution."
+    },
+    "B": {
+      "label_zh": "二级：官方 / 半官方来源",
+      "label_en": "Tier B: official / semi-official",
+      "members": ["government_media", "government_site", "government_industry", "official_site", "aggregated_official"],
+      "meaning_zh": "政府发布、官方机构站点、汇总官方数据；作为对标与背景采信，置信度依条目标注。",
+      "meaning_en": "Government releases, official-institution sites and aggregated official data; used for benchmarks and context, confidence per entry."
+    },
+    "C": {
+      "label_zh": "三级：行业研究来源",
+      "label_en": "Tier C: industry research",
+      "members": ["industry_report"],
+      "meaning_zh": "行业研究报告；仅作量级参照，不作为指标核定依据。",
+      "meaning_en": "Industry research reports; magnitude reference only, not used for metric verification."
+    }
+  },
   "sources": [
     {
       "id": "SRC-TASKBOOK",
@@ -167,8 +190,8 @@
       "url": "https://www.mohurd.gov.cn/",
       "reliability": "national_standard",
       "confidence": "high",
-      "note_zh": "路网密度校核依据；本方案 road_network_density_km_per_sqkm = 8.35 km/km²，达到城市建成区路网密度不低于 8 km/km² 的导向要求",
-      "note_en": "Basis for the road-network density check; this proposal reaches 8.35 km/km2, meeting the guidance of no less than 8 km/km2 for built-up areas"
+      "note_zh": "路网密度校核依据；本方案 road_network_density_km_per_sqkm = 8.68 km/km²，达到城市建成区路网密度不低于 8 km/km² 的导向要求",
+      "note_en": "Basis for the road-network density check; this proposal reaches 8.68 km/km2, meeting the guidance of no less than 8 km/km2 for built-up areas"
     },
     {
       "id": "SRC-GB50180",

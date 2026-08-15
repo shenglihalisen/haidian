@@ -87,7 +87,7 @@
   {
    "id": "A-PHASE-SPLIT",
    "title_zh": "分期为策略性划分",
-   "statement_zh": "phasing.geojson 将总体设计范围完整划分为三期且互不重叠，划分依据为遗址公园贯通进度、重点区成熟度与更新单元产权复杂度的定性判断，未接入投资计划或土地供应计划等官方时序数据。",
+   "statement_zh": "phasing.geojson 将总体设计范围按三期概念性地划分且互不重叠，划分依据为遗址公园贯通进度、重点区成熟度与更新单元产权复杂度的定性判断，未接入投资计划或土地供应计划等官方时序数据。",
    "impact": "low",
    "category": "design_concept",
    "affected_files": [

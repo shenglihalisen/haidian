@@ -11,10 +11,9 @@
       "errors": [],
       "warnings": [
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/geometry/site_boundary.geojson: uses provisional boundary; do not treat it as an official redline or precise-area basis. Organizer data gaps do not block content scoring; recalculate when official geometry is supplied",
-        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/manifest.json: `report/proposal.html` should declare language=zh; legacy v1 package remains compatible",
-        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/manifest.json: `drawings/a0-boards.pdf` should declare language=zh; legacy v1 package remains compatible",
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/manifest.json: `drawings/a3-booklet.pdf` should declare language=zh; legacy v1 package remains compatible",
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/manifest.json: `visual/index.html` should declare language=zh; legacy v1 package remains compatible"
       ],
       "proposal_files": [
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/proposal.md"
@@ -30,7 +29,9 @@
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/assumptions.json",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/compliance_matrix.json",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/design_depth_matrix.json",
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a0-boards.en.pdf",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a0-boards.pdf",
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a3-booklet.en.pdf",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a3-booklet.pdf",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/geometry/buildings.geojson",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/geometry/constraints.geojson",
@@ -51,12 +52,13 @@
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/self_check.json",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/sources.json",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/standard_matrix.json",
+        "submissions/shenglihalisen/centennial-jingzhang-ai-belt/visual/index.en.html",
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt/visual/index.html"
       ],
       "ai_package_stages": {
         "submissions/shenglihalisen/centennial-jingzhang-ai-belt": "formal"
       },
-      "total_bytes": 4599953,
+      "total_bytes": 6575912,
       "maintainer_bypass": false
     },
     "stderr": ""
@@ -222,7 +224,7 @@
           "source": 20,
           "standard": 12,
           "depth": 26,
-          "data": 14,
+          "data": 7,
           "metric": 107
         }
       }
@@ -240,11 +242,7 @@
   "can_enter_formal_review": true,
   "package_type": "professional_design_package",
   "review_status": "formal-review-ready",
-  "next_actions": [
-    "Review legacy bilingual compatibility warning: submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a0-boards.pdf: bilingual contract requires en display counterpart `drawings/a0-boards.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/shenglihalisen/centennial-jingzhang-ai-belt/drawings/a3-booklet.pdf: bilingual contract requires en display counterpart `drawings/a3-booklet.en.pdf`; legacy v1 package remains compatible",
-    "Review legacy bilingual compatibility warning: submissions/shenglihalisen/centennial-jingzhang-ai-belt/visual/index.html: bilingual contract requires en display counterpart `visual/index.en.html`; legacy v1 package remains compatible"
-  ],
+  "next_actions": [],
   "schema_version": "0.1.0",
   "checks": [
     {

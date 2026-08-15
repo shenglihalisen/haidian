@@ -2,7 +2,7 @@
   "schema_version": "0.2.0",
   "package_id": "shenglihalisen-centennial-jingzhang-ai-belt",
   "project_id": "centennial-jingzhang-ai-belt",
-  "site_package_version": "2026-08-15-shenglihalisen-v7",
+  "site_package_version": "2026-08-15-shenglihalisen-v8",
   "package_type": "professional_design_package",
   "package_state": "ready_for_review",
   "submission_stage": "formal",
@@ -14,7 +14,7 @@
     "model_family": "other",
     "model_detail": "WorkBuddy Intelligent Design Assistant, ZH+EN bilingual, geometry-driven evidence chain"
   },
-  "generated_at": "2026-08-13T16:30:00+08:00",
+  "generated_at": "2026-08-15T18:00:00+08:00",
   "files": [
     {
       "path": "manifest.json",
@@ -66,19 +66,19 @@
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "d7c77c924c8d11429d2e2d7ada0953c90955ecbe05f79590dc95d4958f986160"
+      "sha256": "830ace0c9fe3345ce462a41b382a1fb55b893739e5f76c48c2d7b54ef3ae531a"
     },
     {
       "path": "compliance_matrix.json",
       "role": "compliance_matrix",
       "required": true,
-      "sha256": "7b05a0642e40d5ca97ebe6955df324553f2ce7900c29b8c6b0f7ac819a94b037"
+      "sha256": "b7b35eb4c0b352e4e192f3648121867c6f204381d6e1d9112980199a4e963b51"
     },
     {
       "path": "design_depth_matrix.json",
       "role": "design_depth_matrix",
       "required": true,
-      "sha256": "75fdbae1e41227524b4183e4d09616014f5a917a6b7359254f4bada8ab1fe2d8"
+      "sha256": "f2af48426329b73d6498d3eb3b1b3449c833cda60ca91e5d3c2c44d294ecab61"
     },
     {
       "path": "drawings/a0-boards.pdf",
@@ -172,7 +172,7 @@
       "path": "proposal.en.md",
       "role": "narrative",
       "required": true,
-      "sha256": "bc7d45f62ec2df5f2f632e1f05a1aeac350df1951ee0a13521671999c6b917c1",
+      "sha256": "7cd88df8092a5b1d0099225ef0dd32c913085b79c623fd61bb84c9ec9a437f81",
       "language": "en",
       "translation_of": "proposal.md"
     },
@@ -180,7 +180,7 @@
       "path": "proposal.md",
       "role": "narrative",
       "required": true,
-      "sha256": "1db72d01f35200b786cef5c7110d12c9102cb3ef678d81569fea3f92a0c120f4",
+      "sha256": "2e2ceed7ebb8c515d3663557a79bf942b1cbc9ed81b6147628d84b9c456de3bd",
       "language": "zh"
     },
     {
@@ -193,20 +193,20 @@
       "path": "report/proposal.html",
       "role": "rendered_proposal_html",
       "required": true,
-      "sha256": "9d35dd5984c5b60b2072cb6f967d677fbddd6f4105a305df34df768f70ed9f62",
+      "sha256": "ff3f78b88c9aba6a03c50aea5d0052236be3cc9876f4afb68c756b6e959d2d31",
       "language": "zh"
     },
     {
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "d00b31208a84794010f604c0b48b2130577e7255c6a4f7ed34e7c89b76b0c32f"
+      "sha256": "4e616ee1bc0845cb07982b86edded1a7b574e10d3c88b9bbd231e4b56c7b127f"
     },
     {
       "path": "sources.json",
       "role": "sources",
       "required": true,
-      "sha256": "c3551e836faa2cab198c6107422590565979715518bf6a03b55c1c7f6e60cb13"
+      "sha256": "7a9cde920245dfab5791cc2766de408c36ee9039f65049e0a65c34ccb0938f0f"
     },
     {
       "path": "standard_matrix.json",
@@ -218,7 +218,15 @@
       "path": "visual/index.html",
       "role": "visualization",
       "required": true,
-      "sha256": "87cd5adfb93aaf13ce0340bf557ded6bb13d38f6fb407fa9b95271be02821bab"
+      "sha256": "91ac03cdac73beafdf8dc62d49cb4e65c0fe53d65f61d2535f17ff1f3b7e40d1"
+    },
+    {
+      "path": "visual/index.en.html",
+      "role": "visualization",
+      "required": false,
+      "language": "en",
+      "translation_of": "visual/index.html",
+      "sha256": "319e269cde526ec91c51b8f13b0aad24de970156959b6d880b582336a18e05a6"
     },
     {
       "path": "report/proposal.en.html",
@@ -226,7 +234,7 @@
       "required": false,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "a4be6537704bdf7e85ac331f8cfeb0187dfba49d2f23e2e08119917f8d19d39c"
+      "sha256": "3894e206b2607d00ea29ee468683d4933ed058a91dd3c37efa24a3d52a4d575d"
     }
   ],
   "validation_claim": {

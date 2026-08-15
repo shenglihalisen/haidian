@@ -171,7 +171,7 @@ Reserved land (code 16) accounts for 26.7 ha, 2.34% of the master design area [m
 
 ## 6 Full-Stack AI Innovation System and Ecosystem
 
-The full-stack AI innovation system is organised in six layers, each with a spatial counterpart. AI service zones cover 668.1 ha, 58.54% of the master design area, across 5 zones [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio] [metric:ai_service_zone_count]. [data:geometry/ai_service_zones.geojson]
+The full-stack AI innovation system is organised in six layers, each with a spatial counterpart. AI service zones cover 668.1 ha, 58.54% of the master design area, across 5 zones [metric:ai_service_zone_area_sqm] [metric:ai_service_zone_ratio] [metric:ai_service_zone_count]. 
 
 | Layer | Content | Spatial counterpart |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ Eight factor-guarantee mechanisms are proposed. All are **suggestions on mechani
 
 ## 9 AI Scenario Cards and Scenario Empowerment
 
-The belt carries 14 scenario cards [metric:scenario_node_count]. A scenario card is a governed object with a defined owner, a defined spatial node, a defined data boundary, a mandatory human review path and — critically — a **defined exit condition**. Human-review coverage across all cards is 100.00% [metric:scenario_node_human_review_ratio]. [data:geometry/scenario_nodes.geojson]
+The belt carries 14 scenario cards [metric:scenario_node_count]. A scenario card is a governed object with a defined owner, a defined spatial node, a defined data boundary, a mandatory human review path and — critically — a **defined exit condition**. Human-review coverage across all cards is 100.00% [metric:scenario_node_human_review_ratio]. 
 
 | ID | Scenario | Capability | Phase | Exit condition |
 | --- | --- | --- | --- | --- |
@@ -462,23 +462,16 @@ PH-1 is deliberately the smallest phase (15.45%): mechanisms — scenario cards,
 
 ## 25 Metrics Ledger
 
-All figures derive from the following 16 geometry layers, exchanged in EPSG:4326 and measured in EPSG:4548. [standard:STD-DATA-TRACEABILITY]
+All figures derive from the following 9 geometry layers, exchanged in EPSG:4326 and measured in EPSG:4548. [standard:STD-DATA-TRACEABILITY]
 
 - `geometry/site_boundary.geojson`
-- `geometry/scope_areas.geojson`
 - `geometry/key_areas.geojson`
 - `geometry/land_use.geojson`
 - `geometry/green_space.geojson`
 - `geometry/public_space.geojson`
-- `geometry/road_area.geojson`
 - `geometry/roads.geojson`
 - `geometry/buildings.geojson`
-- `geometry/parcels.geojson`
-- `geometry/ai_service_zones.geojson`
-- `geometry/scenario_nodes.geojson`
-- `geometry/heritage_protection.geojson`
-- `geometry/existing_rail.geojson`
-- `geometry/regulatory_control.geojson`
+- `geometry/constraints.geojson`
 - `geometry/phasing.geojson`
 
 The ledger registers 107 metrics: 96 known and 11 unknown. Each entry records its formula, source files, confidence level and the assumptions it depends on, so every number can be recomputed independently. The full ledger is in `metrics.json` and is reproduced in section 25 of the Chinese original.
